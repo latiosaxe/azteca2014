@@ -15,6 +15,9 @@
 @height_header: 45px;
 @height_carrousel: 455px;
 
+@color-divsApps: #f7f7f7;
+@color-borderDivsApps: #d7d7d7;
+
 @font1: "Museo Sans";
 @font2: "Museo Sans Bold";
 
@@ -882,6 +885,28 @@ body,html{
         }
     }
 }
+
+.divApps{
+    &:first-of-type{
+        margin-top: 70px;
+    }
+    border: solid 1px @color-borderDivsApps;
+    background-color: @color-divsApps;
+    padding: 30px 0;
+    .alignImgApp{
+        text-align: center;
+        img{
+            width: 100%;
+        }
+    }
+    .alignApp{
+        text-align: center;
+        img:first-child{
+            margin-bottom: 20px;
+        }
+    }
+}
+
 .side_mobile{
     display: none;
     position: fixed;
@@ -1181,6 +1206,19 @@ body,html{
             width: 48%;
         }
     }
+
+    .divApps{
+        .alignImgApp{
+            img{
+                width: 100%;
+                max-width: 126px;
+            }
+        }
+        .descrip{
+            margin: 20px 0;
+        }
+    }
+
 }
 
 @media (max-width: 610px) {
