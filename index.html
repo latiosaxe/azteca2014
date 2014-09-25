@@ -45,11 +45,15 @@
                             <li><a href="#"><img src="images/header_40.png" alt="Proyecto 40"/>Proyecto 40</a></li>
                             <li><a href="#"><img src="images/header_azteca.png" alt="Azteca America"/>Azteca américa</a></li>
                         </ul>
-                        <ul class="hidden">
-                            <li><a href="#"><img src="images/header_7.png" alt="Azteca 7"/> AZTECA 7 - 2</a></li>
-                            <li><a href="#"><img src="images/header_azteca.png" alt="Azteca trece"/>EL TRECE - 2</a></li>
-                            <li><a href="#"><img src="images/header_40.png" alt="Proyecto 40"/>Proyecto 40 - 2</a></li>
-                            <li><a href="#"><img src="images/header_azteca.png" alt="Azteca America"/>Azteca américa - 2</a></li>
+                        <ul class="hidden" id="local">
+                            <li class="liSearch">
+                                <form class="searchLocal" onsubmit="buscarLocal(); return false;">
+                                    <fieldset>
+                                        <label for="textLocal">Buscar:</label>
+                                        <input type="text" id="textLocal" name="textLocal" class="textLocal" onkeyup="buscarLocal();"/>
+                                    </fieldset>
+                                </form>
+                            </li>
                         </ul>
                         <ul class="hidden">
                             <li><a href="#"><img src="images/header_7.png" alt="Azteca 7"/> AZTECA 7 - 3</a></li>
