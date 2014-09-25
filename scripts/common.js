@@ -205,16 +205,14 @@ window.addEvent('domready', function() {
 });
 
 function buscarLocal(){
-    var buscar = $("textLocal").get('value').toLowerCase();
+    var buscar = removeDiacritics($("textLocal").get('value')).toLowerCase();
     console.log(buscar);
     var listLocal = $$("li.findLocal");
     listLocal.addClass('hidden');
     i=0;
     Array.each(listLocal, function(value){
-        console.log(value.get('data-name').indexOf(buscar) > -1);
         if(i <= 6){
             if(value.get('data-name').indexOf(buscar) > -1){
-                console.log("SIIIIII");
                 value.removeClass('hidden');
                 i++;
             }
@@ -223,6 +221,14 @@ function buscarLocal(){
 
 }
 
+function fixMenu(){
+    $("submenu_especial_1").addClass('hard');
+    $$(".forceHard").addClass('hard');
+}
+function removeFix(){
+    $("submenu_especial_1").removeClass('hard');
+    $$(".forceHard").removeClass('hard');
+}
 
 function wow(){
     var randomEfect=0;

@@ -34,23 +34,23 @@
                     <div class="submenu submenu_especial" id="submenu_especial_1">
                         <ul>
                             <li class="active"><a href="#">TV ABIERTA</a></li>
-                            <li><a href="#">LOCALES</a></li>
+                            <li class="forceHard"><a href="#">LOCALES</a></li>
                             <li><a href="#">TV PAGA</a></li>
                         </ul>
                     </div>
-                    <div class="submenu_extra" id="firstNav">
+                    <div class="submenu_extra forceHard" id="firstNav">
                         <ul>
                             <li><a href="#"><img src="images/header_7.png" alt="Azteca 7"/> AZTECA 7</a></li>
                             <li><a href="#"><img src="images/header_azteca.png" alt="Azteca trece"/>EL TRECE</a></li>
                             <li><a href="#"><img src="images/header_40.png" alt="Proyecto 40"/>Proyecto 40</a></li>
                             <li><a href="#"><img src="images/header_azteca.png" alt="Azteca America"/>Azteca américa</a></li>
                         </ul>
-                        <ul class="hidden" id="local">
+                        <ul class="hidden forceHard" id="local">
                             <li class="liSearch">
                                 <form class="searchLocal" onsubmit="buscarLocal(); return false;">
                                     <fieldset>
                                         <label for="textLocal">Buscar:</label>
-                                        <input type="text" id="textLocal" name="textLocal" class="textLocal" onkeyup="buscarLocal();"/>
+                                        <input type="text" id="textLocal" name="textLocal" class="textLocal" onkeyup="buscarLocal();" onfocus="fixMenu(); return false;" onblur="removeFix(); return false;" autocomplete="off"/>
                                     </fieldset>
                                 </form>
                             </li>
